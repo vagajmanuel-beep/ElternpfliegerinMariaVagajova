@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erfahrene Betreuung | Unterstützende Hände</title>
+    <style>
+        :root {
+            --bg-cream: #FDFAF5;
+            --brand-green: #587361;
+            --text-dark: #2C3E33;
+            --white: #FFFFFF;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: var(--brand-green);
+            font-weight: 400;
+        }
+
+        /* Container for centering content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        /* Standard Section */
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        /* Pricing Grid */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .price-card {
+            background: var(--white);
+            padding: 30px;
+            border-top: 4px solid var(--brand-green);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .price-card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .price-amount {
+            font-size: 2.5rem;
+            color: var(--brand-green);
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--brand-green);
+            color: var(--white);
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-item h3 {
+            margin-bottom: 5px;
+        }
+
+        .contact-link {
+            color: var(--brand-green);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Erfahrene Betreuung</h1>
+        <p>Individuelle Unterstützung mit Herz und Fachkompetenz für Ihre Senioren.</p>
+    </header>
+
+    <section class="container">
+        <div class="section-title">
+            <p>Unsere Preise</p>
+            <h2>Stunden Honorar</h2>
+        </div>
+        
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3>Eine Stunde</h3>
+                <p>Montag bis Freitag bis 19:00</p>
+                <div class="price-amount">€27</div>
+                <a href="#kontakt" class="btn">Jetzt buchen</a>
+            </div>
+            <div class="price-card">
+                <h3>Zwei Stunden</h3>
+                <p>Pro Stunde berechnet</p>
+                <div class="price-amount">€48</div>
+                <a href="#kontakt" class="btn">Jetzt buchen</a>
+            </div>
+            <div class="price-card">
+                <h3>Drei Stunden</h3>
+                <p>Montag bis Freitag bis 19:00</p>
+                <div class="price-amount">€63</div>
+                <a href="#kontakt" class="btn">Jetzt buchen</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="kontakt">
+        <div class="section-title">
+            <p>Erreichbar</p>
+            <h2>Nehmen Sie Kontakt auf</h2>
+            <p>Ein kurzes Gespräch genügt, um zu sehen, ob wir zusammenpassen.</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-item">
+                <h3>Telefon</h3>
+                <p>Rufen Sie uns direkt an</p>
+                <a href="tel:+43732123456" class="contact-link">+43 732 123456</a>
+            </div>
+            <div class="contact-item">
+                <h3>E-Mail</h3>
+                <p>Schreiben Sie uns eine Nachricht</p>
+                <a href="mailto:kontakt@unterstuetzendehaende.at" class="contact-link">E-Mail senden</a>
+            </div>
+            <div class="contact-item">
+                <h3>Büro</h3>
+                <p>Unterstützende Hände, Linz</p>
+                <span class="contact-link">Linz, Österreich</span>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
